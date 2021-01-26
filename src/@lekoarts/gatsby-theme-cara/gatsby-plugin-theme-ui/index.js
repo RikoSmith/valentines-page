@@ -5,8 +5,8 @@ const theme = merge(tailwind, {
   initialColorModeName: `light`,
   useCustomProperties: true,
   colors: {
-    primary: tailwind.colors.orange[4],
-    secondary: tailwind.colors.indigo[6],
+    primary: tailwind.colors.red[6],
+    secondary: tailwind.colors.pink[5],
     text: tailwind.colors.gray[3],
     heading: tailwind.colors.white,
     background: `#FFFFFF`,
