@@ -38,9 +38,9 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       <SVG icon="hexa" width={16} stroke color="icon_red" left="10%" top="50%" />
       <SVG icon="hexa" width={8} stroke color="icon_pink" left="80%" top="70%" />
     </Divider>
-    <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={offset} factor={factor}>
+    <Content sx={{ variant: `texts.bigger`, color: `DarkSlateBlue` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <Intro />
+        <h1 sx={{ color: `DarkOrchid`, fontSize: `72px` }}>Choir Valentine</h1>
         <p>Get your singing valentine link now!</p>
         {/* <Intro /> */}
       </Inner>

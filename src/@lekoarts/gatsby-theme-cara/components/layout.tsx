@@ -37,6 +37,12 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           backgroundColor: theme.colors.primary,
           color: theme.colors.background,
         },
+        body: {
+          backgroundColor: `#FFFFFF`
+        },
+        h1: {
+          color: "#CCC"
+        }
       })}
     />
     <SEO />

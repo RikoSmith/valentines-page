@@ -36,7 +36,8 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <ContactMDX />
+        <h1 sx={{ color: `DarkOrchid`}}>Contact us</h1>
+        <p sx={{ color: `Crimson`}}>There will be links to our instagram, vk etc. </p>
       </Inner>
       <Footer />
     </Content>
