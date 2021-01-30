@@ -23,8 +23,12 @@
     "gatsby-plugin-netlify": "^2.4.0",
     "gatsby-plugin-offline": "^3.3.3",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
+    "mdb-ui-kit": "^3.2.0",
+    "mdbreact": "^5.0.1",
+    "qs": "^6.9.6",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "url-safe-base64": "^1.1.1"
   },
   "devDependencies": {
     "cross-env": "^7.0.2"

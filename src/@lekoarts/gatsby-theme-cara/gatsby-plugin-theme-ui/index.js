@@ -22,6 +22,7 @@ const theme = merge(tailwind, {
     icon_pink: tailwind.colors.pink[5],
     icon_purple: tailwind.colors.purple[6],
     icon_green: tailwind.colors.green[5],
+    icon_white: tailwind.colors.white,
     modes: {
       light: {
         text: tailwind.colors.gray[8],

@@ -11,7 +11,7 @@ import ProjectsMDX from "../sections/projects"
 const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="linear-gradient(to right, LightCoral 0%, HotPink 100%)"
+      bg="linear-gradient(to right, DarkCyan 0%, Cyan 100%)"
       sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
       speed={-0.2}
       offset={1.1}
@@ -45,6 +45,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
         <SVG icon="triangle" hiddenMobile width={16} stroke color="icon_teal" left="18%" top="75%" />
         <SVG icon="circle" width={6} color="icon_brightest" left="75%" top="10%" />
         <SVG icon="upDown" hiddenMobile width={8} color="icon_green" left="45%" top="10%" />
+        <SVG icon="upDown" hiddenMobile width={8} color="icon_green" left="55%" top="20%" />
       </UpDownWide>
       <SVG icon="circle" hiddenMobile width={6} color="icon_brightest" left="4%" top="20%" />
       <SVG icon="circle" width={12} color="icon_pink" left="80%" top="60%" />

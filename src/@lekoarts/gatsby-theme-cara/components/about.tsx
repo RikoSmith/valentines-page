@@ -11,7 +11,7 @@ import AboutMDX from "../sections/about"
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="linear-gradient(to right, BlueViolet 0%, Orchid 100%)"
+      bg="linear-gradient(to right, Gold 0%, LightSalmon 100%)"
       clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
       speed={0.2}
       offset={offset}
@@ -23,6 +23,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
         <SVG icon="upDown" hiddenMobile width={8} color="icon_red" left="70%" top="20%" />
         <SVG icon="triangle" width={8} stroke color="icon_pink" left="25%" top="5%" />
         <SVG icon="upDown" hiddenMobile width={24} color="icon_red" left="80%" top="80%" />
+        <SVG icon="upDown" hiddenMobile width={10} color="icon_red" left="70%" top="20%" />
       </UpDown>
       <UpDownWide>
         <SVG icon="arrowUp" hiddenMobile width={16} color="icon_red" left="5%" top="80%" />
