@@ -21,10 +21,10 @@ class Cara extends Component{
       console.log("Fuck!")
       this.setState({
         user_values: {
-          message: "Never gonna give you up. Never gonna let you down. Never gonna hide away and hurt you.",
+          message: "Never gonna give you up. Never gonna let you down. Never gonna run around and desert you.",
           name_target: "You",
           name_sender: "Rick",
-          video: 69
+          song: 4
         }
       })
     }
