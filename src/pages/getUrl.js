@@ -12,7 +12,7 @@ class Welcome extends Component {
     this.state = { url_code: null };
   }
 
-  componentDidUpdate(prevProps) {
+  componentDidMount(prevProps) {
     let req_vals = JSON.stringify(qs.parse(window.location.href.split('?')[1]))
     const url_c = encode(Buffer.from(this.state.req_values.toString()).toString('base64'))
     this.setState({
