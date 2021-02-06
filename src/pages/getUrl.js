@@ -10,7 +10,10 @@ class Welcome extends Component {
     const url_code = encode(btoa(req_values))
 
     return (
-        <h1>Hello, {url_code}</h1>
+      <div className='link-container'>
+        <h3>This is your link:</h3>
+        <p>{url_code}</p>
+      </div>
         );
     }
   }

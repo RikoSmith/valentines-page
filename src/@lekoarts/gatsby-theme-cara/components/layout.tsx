@@ -3,6 +3,7 @@ import React from "react"
 import { Global } from "@emotion/core"
 import { jsx } from "theme-ui"
 import SEO from "./seo"
+import './fonts.css';
 
 type LayoutProps = { children: React.ReactNode; className?: string }
 
@@ -38,7 +39,7 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           color: theme.colors.background,
         },
         body: {
-          backgroundColor: `#FFFFFF`
+          backgroundColor: `#F5BFD9`
         },
         h1: {
           color: "#CCC"

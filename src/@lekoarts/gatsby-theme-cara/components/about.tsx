@@ -7,11 +7,12 @@ import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import AboutMDX from "../sections/about"
+import './fonts.css';
 
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
-      bg="linear-gradient(to right, Gold 0%, LightSalmon 100%)"
+      bg="#E75286"
       clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
       speed={0.2}
       offset={offset}
@@ -39,7 +40,20 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <AboutMDX />
+        <div className='about-container'>
+          <h2 className='about' sx={{ color: `White`}}>How does it work?</h2>
+          <p>get and share your valentine song online get and share your valentine song online get and share your valentine song online
+          get and share your valentine song online get and share your valentine song onlineget and share your valentine song onlineget and share your valentine song online
+          get and share your valentine song online
+          </p>
+          <ul>
+            <li>Step 1</li>
+            <li>Step 1</li>
+            <li>Step 1</li>
+            <li>Step 1</li>
+            <li>Step 1</li>
+          </ul>
+        </div>
       </Inner>
     </Content>
   </div>

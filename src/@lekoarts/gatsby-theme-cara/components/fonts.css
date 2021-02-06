@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+h1.hero {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+p.under {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+}
+
+.card-title {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+}
+
+.card-title {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+}
+
+h2.about {
+    font-size:3rem !important;
+    line-height: 10px
+}
+
+div.about-container{
+    padding: 10px;
+    margin: 0
+
+}
+
+div.about-container > p{
+    padding: 0px;
+    margin: 0;
+    color: #ffffff
+}
+
+
+.link-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 20px
+}

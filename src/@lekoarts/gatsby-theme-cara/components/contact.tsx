@@ -45,7 +45,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
       fill="divider" 
       speed={-0.2} 
       factor={factor} 
-      bg="linear-gradient(to right, DodgerBlue 0%, DarkViolet 100%)"
+      bg="#E75286"
       sx={{ clipPath: `polygon(0 5%, 100% 20%, 100% 100%, 0 100%)`}}
       offset={4}
     >

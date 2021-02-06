@@ -8,6 +8,7 @@ import styled from "@emotion/styled"
 import { UpDown, UpDownWide, waveAnimation} from "../styles/animations"
 // @ts-ignore
 import Intro from "../sections/intro"
+import './fonts.css';
 
 const InnerWave = styled.div`
   path {
@@ -22,7 +23,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       offset={offset} 
       factor={factor}
       fill="divider" 
-      bg="Crimson"
+      bg="#E75286"
       clipPath="polygon(0 20%, 100% 5%, 100% 75%, 0 90%)"
     >
       
@@ -53,8 +54,8 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content sx={{ variant: `texts.bigger`, color: `White` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <h1 sx={{ color: `White`, fontSize: `70px` }}>Choir Valentine</h1>
-        <p>Get your singing valentine link now!</p>
+        <h1 className='hero' sx={{ color: `White`, fontSize: `80px`}}>Singning Valentines</h1>
+        <p className='under'>get and share your valentine song online</p>
         {/* <Intro /> */}
       </Inner>
     </Content>
