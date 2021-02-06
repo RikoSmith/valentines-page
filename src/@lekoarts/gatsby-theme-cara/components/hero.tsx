@@ -16,7 +16,7 @@ const InnerWave = styled.div`
   }
 `
 
-const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const Hero = ({ offset, factor = 1, vals = null }: { offset: number; factor?: number; vals: object }) => (
   <div>
     <Divider 
       speed={0.2} 
@@ -24,7 +24,7 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
       factor={factor}
       fill="divider" 
       bg="#E75286"
-      clipPath="polygon(0 20%, 100% 5%, 100% 75%, 0 90%)"
+      clipPath="polygon(0 10%, 100% 0%, 100% 90%, 0 100%)"
     >
       
       <UpDown>
@@ -54,8 +54,9 @@ const Hero = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content sx={{ variant: `texts.bigger`, color: `White` }} speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <h1 className='hero' sx={{ color: `White`, fontSize: `80px`}}>Singning Valentines</h1>
-        <p className='under'>get and share your valentine song online</p>
+        <h1 className='hero' sx={{ color: `White`, fontSize: `80px`}}>Dear {vals.name_target},</h1>
+        <p className='under'>{vals.message}</p>
+        <p className='under'>Sincerely, <br/><b><i>{vals.name_sender}</i></b></p>
         {/* <Intro /> */}
       </Inner>
     </Content>

@@ -7,29 +7,15 @@ import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
 import ProjectsMDX from "../sections/projects"
+import './fonts.css';
 
-const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
+const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?: number, vals: object }) => (
   <div>
-    <Divider
-      bg="#E75286"
-      sx={{ clipPath: `polygon(0 15%, 100% 25%, 100% 85%, 0 75%)` }}
-      speed={-0.2}
-      offset={1.1}
-      factor={factor}
-    />
-    <Content speed={0.4} offset={offset + 0.2} factor={factor}>
+    <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <div
-          sx={{
-            display: `grid`,
-            gridGap: [4, 4, 4, 5],
-            gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
-            h2: { gridColumn: `-1/1`, color: `white !important` },
-          }}
-        >
-          <ProjectsMDX 
-          />
-        </div>
+      <div className="videoWrapper">
+          <iframe width="560" height="349" src="http://www.youtube.com/embed/8RvAKRoIDqU?rel=0&hd=1" frameBorder="0" allowFullScreen></iframe>
+      </div>
       </Inner>
     </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>

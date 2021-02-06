@@ -2,8 +2,9 @@
 
 h1.hero {
     font-family: 'Josefin Slab', serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: italic;
+    font-size: 60px
 }
 
 p.under {
@@ -44,4 +45,18 @@ div.about-container > p{
     width: 100%;
     margin: 0;
     padding: 20px
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
