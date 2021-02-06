@@ -17,13 +17,28 @@ class Cara extends Component{
   }
 
   componentDidMount() {
-    const req_key = qs.parse(window.location.href.split('?')[1])
-    const json_str = Buffer.from(decode(req_key.key), 'base64').toString()
-    const user_vals = JSON.parse(json_str)
-    console.log(user_vals)
-    this.setState({
-      user_values: user_vals
-    })
+    if (window.location.href.split('?')[1] == undefined){
+      console.log("Fuck!")
+      this.setState({
+        user_values: {
+          message: "Never gonna give you up. Never gonna let you down. Never gonna hide away and hurt you.",
+          name_target: "You",
+          name_sender: "Rick",
+          video: 69
+        }
+      })
+    }
+    else 
+    {
+      const req_key = qs.parse(window.location.href.split('?')[1])
+      const json_str = Buffer.from(decode(req_key.key), 'base64').toString()
+      const user_vals = JSON.parse(json_str)
+      console.log(user_vals)
+      this.setState({
+        user_values: user_vals
+      })
+    }
+    
   }
 
   render(){
