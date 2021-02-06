@@ -14,6 +14,8 @@ class Welcome extends Component {
 
   componentDidMount(prevProps) {
     let req_vals = JSON.stringify(qs.parse(window.location.href.split('?')[1]))
+    console.log("Here:")
+    console.log(req_vals)
     const url_c = encode(Buffer.from(this.state.req_values.toString()).toString('base64'))
     this.setState({
       url_code: url_c
