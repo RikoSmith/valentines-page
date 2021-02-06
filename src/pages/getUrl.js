@@ -5,17 +5,33 @@ var qs = require('qs')
 
 
 class Welcome extends Component {
-    render() {
-    let req_values = JSON.stringify(qs.parse(window.location.href.split('?')[1]))
-    const url_code = encode(btoa(req_values))
+
+  constructor(props) {
+    super(props);
+    // Don't call this.setState() here!
+    this.state = { url_code: null };
+  }
+
+  componentDidUpdate(prevProps) {
+    let req_vals = JSON.stringify(qs.parse(window.location.href.split('?')[1]))
+    const url_c = encode(Buffer.from(this.state.req_values.toString()).toString('base64'))
+    this.setState({
+      url_code: url_c
+    })
+  }
+
+  render() {
+    
+    
+    
 
     return (
       <div className='link-container'>
         <h3>This is your link:</h3>
-        <p>{url_code}</p>
+        <p>{this.state.url_code}</p>
       </div>
         );
     }
-  }
+}
 
 export default Welcome
