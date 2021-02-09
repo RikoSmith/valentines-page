@@ -10,10 +10,17 @@ h1.hero {
     font-size: 60px
 }
 
-p.under {
+.about-container > h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem !important;
+    font-style: italic;
+    font-size: 45px
+}
+
+p.under,  .about-container > h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem !important;
 }
 
 .card-title {

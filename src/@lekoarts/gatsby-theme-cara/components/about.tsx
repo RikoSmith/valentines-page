@@ -13,7 +13,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
       bg="#E75286"
-      clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)"
+      clipPath="polygon(0 10%, 100% 0%, 100% 90%, 0 100%)"
       speed={0.2}
       offset={offset}
       factor={factor}
@@ -40,19 +40,11 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <div className='about-container'>
-          <h2 className='about' sx={{ color: `White`}}>How to?</h2>
-          <p>get and share your valentine song online get and share your valentine song online get and share your valentine song online
-          get and share your valentine song online get and share your valentine song onlineget and share your valentine song onlineget and share your valentine song online
-          get and share your valentine song online
-          </p>
-          <ul>
-            <li>Step 1</li>
-            <li>Step 1</li>
-            <li>Step 1</li>
-            <li>Step 1</li>
-            <li>Step 1</li>
-          </ul>
+        <div className='about-container' sx={{textAlign: `center`}}>
+          <h2>Happy St. Valentine's Day from NU Choir!</h2>
+           <h3>
+             We want to remind you that no matter what happens, choose love, it will always light your way! And we will always be here sharing our love with all of you!
+           </h3>
         </div>
       </Inner>
     </Content>

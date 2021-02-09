@@ -25,11 +25,21 @@ const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?:
 
   return (
     <div>
+      <Divider
+      bg="#E75286"
+      sx={{ clipPath: `polygon(0 0%, 100% 10%, 100% 100%, 0 90%)` }}
+      speed={0.1}
+      offset={1}
+      factor={factor}
+    />
       <Content speed={0.4} offset={offset} factor={factor}>
         <Inner>
-        <div className="videoWrapper">
-            <iframe width="560" height="349" src={link_song} frameBorder="0" allowFullScreen></iframe>
-        </div>
+          <h4 sx={{color: `#ffffff`, textAlign: `center`, textShadow: `0 5px 5px #e75286, 0 -5px 5px #e75286;`}}>
+            DISCLAIMER! This is not an actual Singing Valentine video. The actual video will be here on the 14th of February. This update is automatic and you DO NOT need to generate new link.
+          </h4>
+          <div className="videoWrapper">
+              <iframe width="560" height="349" src={link_song} frameBorder="0" allowFullScreen></iframe>
+          </div>
         </Inner>
       </Content>
       <Divider speed={0.1} offset={offset} factor={factor}>
