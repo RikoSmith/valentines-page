@@ -34,9 +34,6 @@ const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?:
     />
       <Content speed={0.4} offset={offset} factor={factor}>
         <Inner>
-          <h4 sx={{color: `#ffffff`, textAlign: `center`, textShadow: `0 5px 5px #e75286, 0 -5px 5px #e75286;`}}>
-            DISCLAIMER! This is not an actual Singing Valentine video. The actual video will be here on the 14th of February. This update is automatic and you DO NOT need to generate new link.
-          </h4>
           <div className="videoWrapper">
               <iframe width="560" height="349" src={link_song} frameBorder="0" allowFullScreen></iframe>
           </div>
