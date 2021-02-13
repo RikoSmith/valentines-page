@@ -14,10 +14,10 @@ import './fonts.css';
 const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?: number, vals: object }) => {
 
   const links = [
-    "VF-r5TtlT9w",
-    "8RvAKRoIDqU",
-    "Y1tR6k3dABA",
-    "v8oqbWrP1QY",
+    "CgOCNibZ87U",
+    "Yzo5AnPUIPY",
+    "5YWaBuH9Qwc",
+    "z7MIJdta4aI",
     "dQw4w9WgXcQ"
   ]
 
