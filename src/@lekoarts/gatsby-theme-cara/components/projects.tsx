@@ -21,21 +21,21 @@ const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?:
     "dQw4w9WgXcQ"
   ]
 
-  const link_song = "http://www.youtube.com/embed/" + links[vals.song] + "?rel=0&hd=1"
-
+  //const link_song = "http://www.youtube.com/embed/" + links[vals.song] + "?rel=0&hd=1"
+  const link_song = "http://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&hd=1"
   return (
     <div>
       <Divider
-      bg="#E75286"
-      sx={{ clipPath: `polygon(0 0%, 100% 10%, 100% 100%, 0 90%)` }}
-      speed={0.1}
-      offset={1}
-      factor={factor}
-    />
+        bg="#E75286"
+        sx={{ clipPath: `polygon(0 0%, 100% 10%, 100% 100%, 0 90%)` }}
+        speed={0.1}
+        offset={1}
+        factor={factor}
+      />
       <Content speed={0.4} offset={offset} factor={factor}>
         <Inner>
           <div className="videoWrapper">
-              <iframe width="560" height="349" src={link_song} frameBorder="0" allowFullScreen></iframe>
+            <iframe width="560" height="349" src={link_song} frameBorder="0" allowFullScreen></iframe>
           </div>
         </Inner>
       </Content>
