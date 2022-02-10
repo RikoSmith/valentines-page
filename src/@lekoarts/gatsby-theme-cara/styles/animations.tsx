@@ -22,6 +22,15 @@ const upDown = keyframes`
   }
 `
 
+export const rainbow = keyframes`
+  0%,100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+`
+
 const upDownWide = keyframes`
   from {
     transform: translateY(0);
@@ -32,11 +41,11 @@ const upDownWide = keyframes`
 `
 
 const upDownAnimation = css`
-  ${upDown} 4s ease-in-out infinite alternate;
+  ${upDown} 2s ease-in-out infinite alternate;
 `
 
 const upDownWideAnimation = css`
-  ${upDownWide} 18s ease-in-out infinite alternate;
+  ${upDownWide} 12s ease-in-out infinite alternate;
 `
 
 export const UpDown = styled.div`
@@ -60,3 +69,4 @@ export const UpDownWide = styled.div`
 export const waveAnimation = (length: string) => css`
   animation: ${wave} ${length} linear infinite alternate;
 `
+

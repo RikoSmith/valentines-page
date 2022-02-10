@@ -4,7 +4,7 @@ import Divider from "../elements/divider"
 import Inner from "../elements/inner"
 import Content from "../elements/content"
 import SVG from "./svg"
-import { UpDown, UpDownWide } from "../styles/animations"
+import { UpDown, UpDownWide, rainbow } from "../styles/animations"
 // @ts-ignore
 import ProjectsMDX from "../sections/projects"
 import './fonts.css';
@@ -34,6 +34,20 @@ const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?:
       />
       <Content speed={0.4} offset={offset} factor={factor}>
         <Inner>
+          <div sx={{
+
+          }}>
+            <h4 sx={{
+              textAlign: `center`,
+              fontSize: `20px`,
+              background: `linear-gradient(to right,#a37afe,#6ef6ff ,#85ffad,#d8fd71,#ffaa69);`,
+              WebkitBackgroundClip: `text`,
+              color: `transparent`,
+              animation: rainbow + ` 3s ease-in-out infinite`,
+              backgroundSize: `600% 100%`
+            }}>DISCLAIMER! This is a placeholder video. The requested video will show up on February 14.
+              The link is active now (before the video) so the user can preview and check what recipient will see. </h4>
+          </div>
           <div className="videoWrapper">
             <iframe width="560" height="349" src={link_song} frameBorder="0" allowFullScreen></iframe>
           </div>
@@ -62,7 +76,7 @@ const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?:
         <SVG icon="hexa" width={16} stroke color="icon_red" left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke color="icon_yellow" left="80%" top="70%" />
       </Divider>
-    </div>
+    </div >
   )
 }
 
