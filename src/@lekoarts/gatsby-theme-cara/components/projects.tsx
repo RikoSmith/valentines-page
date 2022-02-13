@@ -18,7 +18,10 @@ const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?:
     "Vi51oCYMit0",
     "XFso-Mqs4vg",
     "x1HEEmzM56w",
-    "dQw4w9WgXcQ"
+    "dQw4w9WgXcQ",
+    "asd",
+    "asdadsa",
+    "-BjZmE2gtdo"
   ]
 
   const link_song = "http://www.youtube.com/embed/" + links[vals.song] + "?rel=0&hd=1"
