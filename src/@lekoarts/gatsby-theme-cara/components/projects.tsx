@@ -14,15 +14,15 @@ import './fonts.css';
 const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?: number, vals: object }) => {
 
   const links = [
-    "CgOCNibZ87U",
-    "Yzo5AnPUIPY",
-    "5YWaBuH9Qwc",
-    "z7MIJdta4aI",
+    "Cy7tvFsi93U",
+    "Vi51oCYMit0",
+    "XFso-Mqs4vg",
+    "x1HEEmzM56w",
     "dQw4w9WgXcQ"
   ]
 
-  //const link_song = "http://www.youtube.com/embed/" + links[vals.song] + "?rel=0&hd=1"
-  const link_song = "http://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&hd=1"
+  const link_song = "http://www.youtube.com/embed/" + links[vals.song] + "?rel=0&hd=1"
+  //const link_song = "http://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&hd=1"
   return (
     <div>
       <Divider
@@ -34,20 +34,6 @@ const Projects = ({ offset, factor = 2, vals = nul }: { offset: number; factor?:
       />
       <Content speed={0.4} offset={offset} factor={factor}>
         <Inner>
-          <div sx={{
-
-          }}>
-            <h4 sx={{
-              textAlign: `center`,
-              fontSize: `20px`,
-              background: `linear-gradient(to right,#a37afe,#6ef6ff ,#85ffad,#d8fd71,#ffaa69);`,
-              WebkitBackgroundClip: `text`,
-              color: `transparent`,
-              animation: rainbow + ` 3s ease-in-out infinite`,
-              backgroundSize: `600% 100%`
-            }}>DISCLAIMER! This is a placeholder video. The requested video will show up on February 14.
-              The link is active now (before the video) so the user can preview and check what recipient will see. </h4>
-          </div>
           <div className="videoWrapper">
             <iframe width="560" height="349" src={link_song} frameBorder="0" allowFullScreen></iframe>
           </div>
